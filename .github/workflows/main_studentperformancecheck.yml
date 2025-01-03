@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: testdockerayush.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_4dc946b02e8046ad91b4e510170ef4d1 }}/studentperformance:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./dockerfile
 
   deploy:
     runs-on: ubuntu-latest
